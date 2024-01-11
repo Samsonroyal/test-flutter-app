@@ -18,26 +18,35 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-        
-            Image.asset(
+        Expanded(
+          child: Image.asset(
               "assets/images/testone.png",
               fit: BoxFit.contain, 
             ),
+            ),
             
-            Text("Discover your dream job here", 
-            style: TextStyle(fontSize: 24)
+            
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: const Text("Discover your\nDream job here", 
+              style: TextStyle(fontSize: 24 , color: Colors.red, fontWeight: FontWeight.bold),
+              ),
             ),
         
         
-            Text("Discover your dream job and apply with your CV here", 
-            style: TextStyle(
-            fontSize: 16, 
-            color: Colors.black
-            ),
-            textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text("Discover your dream job and apply with your CV here", 
+              style: TextStyle(
+              fontSize: 16, 
+              color: Colors.black
+              ),
+              textAlign: TextAlign.center,
+              ),
             ),
         
             Container(
+              margin: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
