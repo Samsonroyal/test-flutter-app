@@ -38,15 +38,32 @@ class _MyHomePageState extends State<MyHomePage> {
 
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
+
             children: [
-              ElevatedButton(onPressed: () {},                
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.green),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                    )
+                  )
+                ), 
+                
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: const Text("Login"),
+
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white
+                    ),
+                    ),
                   color: Colors.green
                 ),
               ),
-             
+            
 
               ElevatedButton(
                 onPressed: () {  },
