@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
         
             Text("Discover your dream job and apply with your CV here", 
             style: TextStyle(
-            fontSize: 24, 
+            fontSize: 16, 
             color: Colors.black
             ),
             textAlign: TextAlign.center,
