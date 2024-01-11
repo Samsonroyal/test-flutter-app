@@ -14,64 +14,85 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-
-          Icon(Icons.perm_identity, 
-          size: 64, 
-          color: Colors.green,
-          ),
-          
-          Text("Discover your dream job here", 
-          style: TextStyle(fontSize: 24)
-          ),
-
-
-          Text("Discover your dream job and apply with your CV here", 
-          style: TextStyle(
-          fontSize: 24, 
-          color: Colors.black
-          ),
-          textAlign: TextAlign.center,
-          ),
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                    )
-                  )
-                ), 
-                
-                child: Container(
-
-                  child: Text(
-                    "Login",
-                    style: TextStyle(
-                      fontSize: 24,
-                      color: Colors.white
-                    ),
-                    ),
-                  color: Colors.green
-                ),
-              ),
+      child: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+        
+            Icon(Icons.perm_identity, 
+            size: 64, 
+            color: Colors.green,
+            ),
             
-
-              ElevatedButton(
-                onPressed: () {  },
-                child: const Text("Register"),
-              ),
-            ],
-          )
-        ],
+            Text("Discover your dream job here", 
+            style: TextStyle(fontSize: 24)
+            ),
+        
+        
+            Text("Discover your dream job and apply with your CV here", 
+            style: TextStyle(
+            fontSize: 24, 
+            color: Colors.black
+            ),
+            textAlign: TextAlign.center,
+            ),
+        
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                      )
+                    )
+                  ), 
+                  
+                  child: Container(
+        
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.white
+                      ),
+                      ),
+                    color: Colors.green
+                  ),
+                ),
+              
+        
+                ElevatedButton(
+                  onPressed: () {  },
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                      )
+                    )
+                  ), 
+                  child: Container(
+        
+                    child: Text(
+                      "Register",
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.white
+                      ),
+                      ),
+                    color: Colors.green
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
