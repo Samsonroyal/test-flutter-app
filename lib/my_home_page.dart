@@ -19,9 +19,9 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
         
-            Icon(Icons.perm_identity, 
-            size: 64, 
-            color: Colors.green,
+            Image.asset(
+              "assets/images/testone.png",
+              fit: BoxFit.contain, 
             ),
             
             Text("Discover your dream job here", 
@@ -37,59 +37,61 @@ class _MyHomePageState extends State<MyHomePage> {
             textAlign: TextAlign.center,
             ),
         
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.green),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
+            Container(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        )
                       )
-                    )
-                  ), 
-                  
-                  child: Container(
-        
-                    child: Text(
-                      "Login",
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Colors.white
-                      ),
-                      ),
-                    color: Colors.green
+                    ), 
+                    
+                    child: Container(
+                      
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Colors.white
+                        ),
+                        ),
+                      color: Colors.green
+                    ),
                   ),
-                ),
-              
-        
-                ElevatedButton(
-                  onPressed: () {  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.green),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
+                
+                      
+                  ElevatedButton(
+                    onPressed: () {  },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        )
                       )
-                    )
-                  ), 
-                  child: Container(
-        
-                    child: Text(
-                      "Register",
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Colors.white
-                      ),
-                      ),
-                    color: Colors.green
+                    ), 
+                    child: Container(
+                      
+                      child: Text(
+                        "Register",
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Colors.white
+                        ),
+                        ),
+                      color: Colors.green
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),
