@@ -17,9 +17,43 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'Your content here', // Add your content here
+
+          Icon(Icons.perm_identity, 
+          size: 64, 
+          color: Colors.green,
           ),
+          
+          Text("Discover your dream job here", 
+          style: TextStyle(fontSize: 24)
+          ),
+
+
+          Text("Discover your dream job and apply with your CV here", 
+          style: TextStyle(
+          fontSize: 24, 
+          color: Colors.black
+          ),
+          textAlign: TextAlign.center,
+          ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(onPressed: () {},                
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: const Text("Login"),
+                  color: Colors.green
+                ),
+              ),
+             
+
+              ElevatedButton(
+                onPressed: () {  },
+                child: const Text("Register"),
+              ),
+            ],
+          )
         ],
       ),
     );
