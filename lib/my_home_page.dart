@@ -54,16 +54,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {},
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.green),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                        )
-                      )
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      side: BorderSide(),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      
                     ), 
                     
-                    child: Container(
+                    child: const Padding(
+                      padding: 
+                      EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                       
                       child: Text(
                         "Login",
